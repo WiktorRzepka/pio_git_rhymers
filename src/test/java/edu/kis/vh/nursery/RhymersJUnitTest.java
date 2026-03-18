@@ -11,19 +11,19 @@ public class RhymersJUnitTest {
         int testValue = 4;
         rhymer.countIn(testValue);
 
-        int result = rhymer.peekaboo();
+        int result = rhymer.top();
         Assert.assertEquals(testValue, result);
     }
 
     @Test
     public void testCallCheck() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
-        boolean result = rhymer.callCheck();
+        boolean result = rhymer.isEmpty();
         Assert.assertEquals(true, result);
 
         rhymer.countIn(888);
 
-        result = rhymer.callCheck();
+        result = rhymer.isEmpty();
         Assert.assertEquals(false, result);
     }
 
@@ -46,15 +46,15 @@ public class RhymersJUnitTest {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
         final int EMPTY_STACK_VALUE = -1;
 
-        int result = rhymer.peekaboo();
+        int result = rhymer.top();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
         int testValue = 4;
         rhymer.countIn(testValue);
 
-        result = rhymer.peekaboo();
+        result = rhymer.top();
         Assert.assertEquals(testValue, result);
-        result = rhymer.peekaboo();
+        result = rhymer.top();
         Assert.assertEquals(testValue, result);
     }
 
