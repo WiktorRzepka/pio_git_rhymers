@@ -5,6 +5,7 @@ import org.junit.Test;
 
 public class RhymersJUnitTest {
 
+    // Projekt jest poprawny - wszystkie testy kończą się pozytywnie.
     @Test
     public void testCountIn() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
