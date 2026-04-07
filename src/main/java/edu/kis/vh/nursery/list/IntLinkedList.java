@@ -38,7 +38,7 @@ public class IntLinkedList {
         return ret;
     }
 
-    public Node getLast() {
+    Node getLast() {
         return last;
     }
 }
