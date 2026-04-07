@@ -7,7 +7,8 @@ public class DefaultCountingOutRhymer {
     private final int[] numbers = new int[CAPACITY];
 
     private int total = EMPTY;
-  
+
+    //TODO: method is not used, so it should be removed.
     public int getTotal() {
         return total;
     }
