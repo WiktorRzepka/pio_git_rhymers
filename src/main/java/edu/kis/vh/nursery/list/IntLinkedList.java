@@ -8,6 +8,7 @@ public class IntLinkedList {
 
     private static final int STACK_EMPTY=-1;
     private Node last;
+    //TODO: rework code (e.g. push(), pop()) to use that attribute or remove it.
     private int size;
 
     /**
@@ -66,6 +67,7 @@ public class IntLinkedList {
      * Zwraca referencję do ostatnio dodanego węzła do stosu.
      * @return obiekt klasy Node - ostatnio dodany węzeł lub null.
      */
+    //TODO: method is not used, so it should be removed.
     Node getLast() {
         return last;
     }

@@ -3,7 +3,7 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.list.IntLinkedList;
 import org.junit.Assert;
 import org.junit.Test;
-
+//TODO: needs more tests to validate whole project.
 public class RhymersJUnitTest {
 
     // Projekt jest poprawny - wszystkie testy kończą się pozytywnie.
